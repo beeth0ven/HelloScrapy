@@ -21,6 +21,11 @@ NEWSPIDER_MODULE = 'HelloScrapy.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+ITEM_PIPELINES = {
+'HelloScrapy.pipelines.MyImagesPipeline':1
+}
+IMAGES_STORE = 'images'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
